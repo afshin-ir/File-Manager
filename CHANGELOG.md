@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added Jalali date previews to the date and time format chooser.
 
 ### Changed
-- File modification dates in file lists and recent files now follow the selected calendar.
+- File modification dates in file lists, file properties, and recent files now follow the selected calendar.
 
 ## [1.6.5] - 2026-11-18
 ### Changed
