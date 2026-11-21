@@ -10,6 +10,7 @@ const val MAX_COLUMN_COUNT = 15
 
 // shared preferences
 const val SHOW_HIDDEN = "show_hidden"
+const val USE_JALALI_CALENDAR = "use_jalali_calendar"
 const val PRESS_BACK_TWICE = "press_back_twice"
 const val HOME_FOLDER = "home_folder"
 const val TEMPORARILY_SHOW_HIDDEN = "temporarily_show_hidden"
