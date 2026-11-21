@@ -1,6 +1,7 @@
 package org.fossify.filemanager.extensions
 
 import android.content.Context
+import android.text.BidiFormatter
 import org.fossify.commons.extensions.formatSize
 
 private val persianFileSizeUnits = mapOf(
@@ -21,8 +22,8 @@ private val persianFileSizeUnits = mapOf(
 
 fun Long.formatLocalizedFileSize(context: Context): String {
     val formatted = formatSize()
-    val language = context.resources.configuration.locales[0].language
-    if (language != "fa") return formatted
+    val locale = context.resources.configuration.locales[0]
+    if (locale.language != "fa") return formatted
 
     val match = Regex("""^(.+?)\s+(B|kB|KiB|MB|MiB|GB|GiB|TB|TiB|PB|PiB|EB|EiB)$""")
         .matchEntire(formatted) ?: return formatted
