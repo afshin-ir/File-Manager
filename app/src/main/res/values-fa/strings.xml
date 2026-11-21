@@ -264,4 +264,25 @@
     <string name="use_english_language">استفاده از زبان انگلیسی</string>
     <string name="show_hidden_items">نمایش موارد پنهان</string>
     <string name="font_size">اندازهٔ قلم</string>
+    <string name="about">دربارهٔ برنامه</string>
+    <string name="access_storage_prompt">برای کارکرد درست برنامه، اجازهٔ دسترسی به همهٔ فایل‌ها را بدهید.</string>
+    <string name="add_password">افزودن گذرواژه</string>
+    <string name="column_count">تعداد ستون‌ها</string>
+    <string name="customize_colors">سفارشی‌سازی رنگ‌ها</string>
+    <string name="exif">اطلاعات EXIF</string>
+    <string name="fingerprint_setup_successfully">قفل با اثر انگشت تنظیم شد. اگر برای برداشتن قفل به مشکل خوردید، برنامه را دوباره نصب کنید.</string>
+    <string name="protection_setup_successfully">گذرواژه تنظیم شد. اگر آن را فراموش کردید، برنامه را دوباره نصب کنید.</string>
+    <string name="settings">تنظیمات</string>
+    <string name="faq_2_title_commons">چطور می‌توانم بدون پرداخت پول از شما پشتیبانی کنم؟</string>
+    <string name="faq_2_text_commons">بله، حتماً. می‌توانید برنامه‌های ما را به دیگران معرفی کنید و برایشان نظر و امتیاز ثبت کنید. همچنین می‌توانید در ترجمهٔ برنامه‌ها به زبان‌های تازه یا به‌روزرسانی ترجمه‌های موجود کمک کنید. راهنمای ترجمه در <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">این صفحه</a> است. اگر پرسشی دارید، به نشانی <a href="mailto:hello@fossify.org">hello@fossify.org</a> ایمیل بزنید.</string>
+    <string name="faq_3_title_commons">اگر فایلی را اشتباهی حذف کردم، چطور آن را برگردانم؟</string>
+    <string name="faq_3_text_commons">متأسفانه فایل حذف‌شده قابل‌بازیابی نیست. فایل پس از تأیید، بی‌درنگ حذف می‌شود و برنامه سطل زباله ندارد.</string>
+    <string name="faq_6_title_commons">اگر نماد برنامه ناپدید شد، چه کار کنم؟</string>
+    <string name="faq_6_text_commons">این مشکل زمانی پیش می‌آید که صفحهٔ اصلی دستگاه از تغییر رنگ نمادها پشتیبانی نکند. اگر ممکن است، برنامه را از Google Play یا از طریق یک ابزارک باز کنید. سپس رنگ سبز پیش‌فرض نماد را با کد #106D1F برگردانید. اگر مشکل حل نشد، برنامه را دوباره نصب کنید.</string>
+    <string name="faq_7_title_commons">هزینه از حسابم کم شده، اما نمی‌توانم برنامه را بارگیری کنم. چه کار کنم؟</string>
+    <string name="faq_7_text_commons">پرداخت‌ها را Google مدیریت می‌کند و گاهی در این فرایند اختلال پیش می‌آید. حافظهٔ پنهان برنامهٔ Google Play را پاک کنید، دستگاه را راه‌اندازی مجدد کنید و دوباره برای بارگیری برنامه تلاش کنید.</string>
+    <string name="faq_9_title_commons">چطور چند مورد را هم‌زمان انتخاب کنم؟</string>
+    <string name="faq_9_text_commons">چند راه دارید: روی یک مورد چند لحظه نگه دارید تا حالت انتخاب فعال شود و سپس موارد دیگر را لمس کنید؛ یا انگشتتان را پس از نگه‌داشتن روی یک مورد، روی موارد دیگر بکشید. همچنین می‌توانید یک مورد را نگه دارید و بعد مورد دیگری را هم نگه دارید تا همهٔ موارد میان آن دو انتخاب شوند. برای انتخاب همهٔ موارد، یک مورد را نگه دارید و سپس شمارندهٔ موارد انتخاب‌شده را در بالای صفحه لمس کنید.</string>
+    <string name="faq_10_title_commons">برنامه را خریده‌ام، اما نمی‌توانم آن را روی دستگاه دیگری بارگیری کنم.</string>
+    <string name="faq_10_text_commons">حافظهٔ پنهان Google Play را پاک کنید، دستگاه را راه‌اندازی مجدد کنید و دوباره تلاش کنید. گاهی این مشکل از اختلال Google Play است و به خود برنامه مربوط نمی‌شود.</string>
 </resources>
