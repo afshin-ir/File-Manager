@@ -12,6 +12,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.exifinterface.media.ExifInterface
 import org.fossify.commons.R
 import org.fossify.commons.dialogs.BasePropertiesDialog
+import org.fossify.commons.dialogs.ConfirmationDialog
 import org.fossify.commons.activities.BaseSimpleActivity
 import org.fossify.commons.extensions.*
 import org.fossify.commons.helpers.*
