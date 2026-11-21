@@ -297,7 +297,7 @@
     <string name="dark_red">قرمز تیره</string>
     <string name="white">سفید</string>
     <string name="app_icon_color_warning">تغییر رنگ نماد ممکن است در بعضی صفحه‌های اصلی درست کار نکند. اگر نماد ناپدید شد، برنامه را از فروشگاه Google Play یا از طریق یک ابزارک باز کنید و رنگ نماد را به سبز پیش‌فرض با کد #106D1F برگردانید. اگر مشکل برطرف نشد، برنامه را دوباره نصب کنید.</string>
-    <string name="font_monospace">تک‌فاصله</string>
+    <string name="font_monospace">تک‌عرض</string>
     <string name="select_font_file">انتخاب فایل قلم…</string>
     <string name="system_service_disabled">سرویس انتخاب فایل و پوشه در دسترس نیست</string>
     <string name="invalid_font_file">فایل قلم معتبر نیست</string>
