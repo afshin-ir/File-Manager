@@ -90,6 +90,7 @@ class MainActivity : SimpleActivity() {
     private var mStoredFontSize = 0
     private var mStoredDateFormat = ""
     private var mStoredTimeFormat = ""
+    private var mStoredUseJalaliCalendar = false
     private var mStoredShowTabs = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -144,7 +145,7 @@ class MainActivity : SimpleActivity() {
             }
         }
 
-        if (mStoredDateFormat != config.dateFormat || mStoredTimeFormat != getTimeFormat()) {
+        if (mStoredDateFormat != config.dateFormat || mStoredTimeFormat != getTimeFormat() || mStoredUseJalaliCalendar != config.useJalaliCalendar) {
             getAllFragments().forEach {
                 (it as? ItemOperationsListener)?.setupDateTimeFormat()
             }
@@ -287,6 +288,7 @@ class MainActivity : SimpleActivity() {
             mStoredFontSize = fontSize
             mStoredDateFormat = dateFormat
             mStoredTimeFormat = context.getTimeFormat()
+            mStoredUseJalaliCalendar = useJalaliCalendar
             mStoredShowTabs = showTabs
         }
     }
