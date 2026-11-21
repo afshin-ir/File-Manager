@@ -1,42 +1,67 @@
-# Fossify File Manager
+<div dir="rtl" align="right">
 
-<img alt="Logo" src="graphics/icon.webp" width="120" />
+# مدیریت فایل‌ها
 
-<a href='https://play.google.com/store/apps/details?id=org.fossify.filemanager'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' height=80/></a> <a href="https://f-droid.org/packages/org.fossify.filemanager/"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on-en.svg" alt="Get it on F-Droid" height=80/></a> <a href="https://apt.izzysoft.de/fdroid/index/apk/org.fossify.filemanager"><img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" alt="Get it on IzzyOnDroid" height=80/></a>
+یک مدیر فایل سریع، امن و بدون تبلیغات برای اندروید؛ با ابزارهای کامل برای مرتب‌کردن فایل‌ها و پوشه‌ها و با احترام به حریم خصوصی شما. این برنامه فورکی از **Fossify File Manager** است و قابلیت‌های تقویم جلالی و رابط فارسی هم به آن افزوده شده است.
 
-Tired of file managers that slow you down and invade your privacy? Unlock a lightning-fast, secure, and completely customizable experience with Fossify File Manager. ⚡
+[⬇️ **دانلود مستقیم APK نسخهٔ ۱٫۶٫۶**](https://github.com/afshin-ir/File-Manager/releases/download/1.6.6/file-manager-18-foss-release.apk)  
+[مشاهدهٔ همهٔ نسخه‌ها و یادداشت‌های انتشار](https://github.com/afshin-ir/File-Manager/releases)
 
-**🚀 DOMINATE YOUR DIGITAL WORLD WITH BLAZING-FAST NAVIGATION:**
- - Swiftly manage your files with easy compression and transfer capabilities, keeping your digital life organized.
- - Quickly access your most-used folders with customizable home folder and favorite shortcuts.
- - Find what you need in seconds with intuitive navigation, search, and sorting options.
+## ✨ امکانات
 
-**🔐 FORTIFY YOUR DATA WITH UNPARALLELED PRIVACY AND SECURITY:**
- - Secure sensitive files with password, pattern, or fingerprint locks for hidden items or the entire app.
- - No internet access required – your files stay private and secure on your device.
+### 📂 مدیریت آسان فایل‌ها
 
-**💾 MASTER YOUR STORAGE LIKE A PRO:**
- - Clear space with easy file and folder compression to maximize your device's potential.
- - Identify and clean up space-hogging files with the built-in storage analysis tool.
- - Seamlessly navigate root files, SD cards, and USB devices for total organization.
+- فایل‌ها و پوشه‌ها را کپی، جابه‌جا، تغییرنام یا حذف کنید.
+- فایل‌ها را فشرده یا از حالت فشرده خارج کنید.
+- پوشهٔ خانگی دلخواهتان را تعیین کنید و پوشه‌های پرکاربرد را به فهرست برگزیده‌ها بیفزایید.
+- با جست‌وجو، مرتب‌سازی و پیمایش ساده، فایل موردنظرتان را زود پیدا کنید.
+- برای فایل‌ها و پوشه‌های پرکاربرد میان‌بر بسازید.
 
-**📁 OPTIMIZE YOUR WORKFLOW WITH HANDY TOOLS:**
- - Create desktop shortcuts for instant access to your most-used files and folders.
- - Edit, print, or read documents easily with the light file editor, enhanced by zoom gestures.
+### 🔐 امنیت و حریم خصوصی
 
-**🌈 MAKE IT YOUR OWN WITH ENDLESS CUSTOMIZATION:**
- - Enjoy an ad-free, open-source experience that puts you in control, not corporate giants.
- - Personalize colors, themes, and icons to reflect your unique style and preferences.
+- برای قفل‌کردن برنامه یا نمایش موارد پنهان، از گذرواژه، الگو یا اثر انگشت استفاده کنید.
+- برنامه برای کارکردن به اینترنت نیاز ندارد؛ فایل‌ها روی دستگاه خودتان می‌مانند.
+- این برنامه متن‌باز و بدون تبلیغات است.
 
-Ditch the bloated, privacy-invading file managers and experience true freedom with Fossify File Manager. Download now and take back control of your digital life!
+### 💾 مدیریت فضای ذخیره‌سازی
 
-➡️ Explore more Fossify apps: https://www.fossify.org<br>
-➡️ Open-Source Code: https://www.github.com/FossifyOrg<br>
-➡️ Join the community on Reddit: https://www.reddit.com/r/Fossify<br>
-➡️ Connect on Telegram: https://t.me/Fossify
+- با ابزار بررسی فضای حافظه، فایل‌ها و پوشه‌های اشغال‌کنندهٔ فضا را پیدا کنید.
+- حافظهٔ داخلی، کارت حافظه و دستگاه‌های USB را مرور کنید.
+- در دستگاه‌های روت‌شده، به فایل‌های ریشه نیز دسترسی داشته باشید.
 
-<div align="center">
-<img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/1_en-US.png" width="30%">
-<img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/3_en-US.png" width="30%">
-<img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/4_en-US.png" width="30%">
+### 🛠️ ابزارهای کاربردی
+
+- فایل‌های متنی را در ویرایشگر سادهٔ برنامه بخوانید یا ویرایش کنید.
+- سندها را چاپ کنید و با حرکت‌های بزرگ‌نمایی، خواندن متن را آسان‌تر کنید.
+- رنگ‌ها، پوسته و نماد برنامه را مطابق سلیقه‌تان تغییر دهید.
+
+## 🇮🇷 قابلیت‌های افزوده‌شده در این فورک
+
+- **تقویم جلالی:** تاریخ فایل‌ها در فهرست‌ها، موارد اخیر، پنجرهٔ ویژگی‌های فایل و پیمایش بر پایهٔ تاریخ با تقویم جلالی نمایش داده می‌شود. پیش‌نمایش قالب‌های تاریخ نیز جلالی است.
+- **انتخاب تقویم:** در تنظیمات می‌توانید نمایش تاریخ‌ها با تقویم جلالی را روشن یا خاموش کنید. اگر زبان برنامه فارسی باشد، این گزینه به‌طور پیش‌فرض روشن است.
+- **رابط کاربری فارسی:** متن‌های برنامه، پیام‌ها و پنجره‌های تأیید به فارسی روان برگردانده شده‌اند.
+- **نصب مستقل:** شناسهٔ اندرویدی این فورک از نسخهٔ اصلی جداست؛ بنابراین می‌توانید هر دو برنامه را هم‌زمان نصب داشته باشید.
+
+## 🖼️ تصاویر برنامه
+
+</div>
+
+<div align="center" dir="ltr">
+<img alt="نمایی از برنامه" src="fastlane/metadata/android/en-US/images/phoneScreenshots/1_en-US.png" width="30%">
+<img alt="نمایی از برنامه" src="fastlane/metadata/android/en-US/images/phoneScreenshots/3_en-US.png" width="30%">
+<img alt="نمایی از برنامه" src="fastlane/metadata/android/en-US/images/phoneScreenshots/4_en-US.png" width="30%">
+</div>
+
+<div dir="rtl" align="right">
+
+## 🌐 پیوندها
+
+- وب‌سایت Fossify: [fossify.org](https://www.fossify.org)
+- سازمان سازندهٔ نسخهٔ اصلی: [FossifyOrg در GitHub](https://github.com/FossifyOrg)
+- گفت‌وگو با جامعهٔ Fossify در [Reddit](https://www.reddit.com/r/Fossify) و [تلگرام](https://t.me/Fossify)
+
+## 📄 مجوز
+
+این برنامه بر پایهٔ پروژهٔ متن‌باز Fossify File Manager ساخته شده و با مجوز **GPL-3.0** منتشر می‌شود. کد منبع این فورک در [GitHub](https://github.com/afshin-ir/File-Manager) در دسترس است.
+
 </div>
