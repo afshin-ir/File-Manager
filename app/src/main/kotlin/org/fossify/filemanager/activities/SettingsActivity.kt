@@ -2,7 +2,7 @@ package org.fossify.filemanager.activities
 
 import android.content.Intent
 import android.os.Bundle
-import org.fossify.commons.dialogs.ChangeDateTimeFormatDialog
+import org.fossify.filemanager.dialogs.ChangeDateTimeFormatDialog
 import org.fossify.commons.dialogs.ConfirmationDialog
 import org.fossify.commons.dialogs.RadioGroupDialog
 import org.fossify.commons.dialogs.SecurityDialog
@@ -39,6 +39,7 @@ class SettingsActivity : SimpleActivity() {
         setupManageFavorites()
         setupManageShownTabs()
         setupChangeDateTimeFormat()
+        setupUseJalaliCalendar()
         setupFontSize()
         setupShowHidden()
         setupEnablePullToRefresh()
@@ -108,6 +109,18 @@ class SettingsActivity : SimpleActivity() {
     private fun setupChangeDateTimeFormat() {
         binding.settingsChangeDateTimeFormatHolder.setOnClickListener {
             ChangeDateTimeFormatDialog(this) {}
+        }
+    }
+
+    private fun setupUseJalaliCalendar() {
+        binding.apply {
+            settingsUseJalaliCalendar.isChecked = config.useJalaliCalendar
+            settingsUseJalaliCalendar.setOnCheckedChangeListener { _, isChecked ->
+                config.useJalaliCalendar = isChecked
+            }
+            settingsUseJalaliCalendarHolder.setOnClickListener {
+                settingsUseJalaliCalendar.toggle()
+            }
         }
     }
 
