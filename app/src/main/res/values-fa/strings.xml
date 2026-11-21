@@ -286,4 +286,21 @@
     <string name="faq_9_text_commons">چند راه دارید: روی یک مورد چند لحظه نگه دارید تا حالت انتخاب فعال شود و سپس موارد دیگر را لمس کنید؛ یا انگشتتان را پس از نگه‌داشتن روی یک مورد، روی موارد دیگر بکشید. همچنین می‌توانید یک مورد را نگه دارید و بعد مورد دیگری را هم نگه دارید تا همهٔ موارد میان آن دو انتخاب شوند. برای انتخاب همهٔ موارد، یک مورد را نگه دارید و سپس شمارندهٔ موارد انتخاب‌شده را در بالای صفحه لمس کنید.</string>
     <string name="faq_10_title_commons">برنامه را خریده‌ام، اما نمی‌توانم آن را روی دستگاه دیگری بارگیری کنم.</string>
     <string name="faq_10_text_commons">حافظهٔ پنهان Google Play را پاک کنید، دستگاه را راه‌اندازی مجدد کنید و دوباره تلاش کنید. گاهی این مشکل از اختلال Google Play است و به خود برنامه مربوط نمی‌شود.</string>
+
+    <!-- تکمیل ترجمهٔ صفحهٔ رنگ‌ها، انتخاب قلم و قالب زمان -->
+    <string name="theme_and_colors">پوسته و رنگ‌ها</string>
+    <string name="font">قلم</string>
+    <string name="app_font">قلم برنامه</string>
+    <string name="all_fossify_apps">همهٔ برنامه‌های فاسیفای</string>
+    <string name="apply_to_all_apps">اعمال پوسته به همهٔ برنامه‌های فاسیفای</string>
+    <string name="requires_fossify_thank_you">برای استفاده از این قابلیت، برنامهٔ Fossify Thank You لازم است</string>
+    <string name="dark_red">قرمز تیره</string>
+    <string name="white">سفید</string>
+    <string name="app_icon_color_warning">تغییر رنگ نماد ممکن است در بعضی صفحه‌های اصلی درست کار نکند. اگر نماد ناپدید شد، برنامه را از فروشگاه Google Play یا از طریق یک ابزارک باز کنید و رنگ نماد را به سبز پیش‌فرض با کد #106D1F برگردانید. اگر مشکل برطرف نشد، برنامه را دوباره نصب کنید.</string>
+    <string name="font_monospace">تک‌فاصله</string>
+    <string name="select_font_file">انتخاب فایل قلم…</string>
+    <string name="system_service_disabled">سرویس انتخاب فایل و پوشه در دسترس نیست</string>
+    <string name="invalid_font_file">فایل قلم معتبر نیست</string>
+    <string name="global_theme_success">پوستهٔ فعلی با موفقیت برای همهٔ برنامه‌های فاسیفای اعمال شد. تغییرهای بعدی این پوسته نیز به‌طور خودکار در آن برنامه‌ها اعمال می‌شوند.</string>
+    <string name="use_24_hour_time_format">نمایش ساعت با قالب ۲۴ساعته</string>
 </resources>
