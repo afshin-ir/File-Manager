@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.6.7] - 2026-11-21
+### Changed
+- Improved file list readability by showing modification dates on their own line at the same text size as file sizes.
+- Displayed file size units in Persian in the file list and properties.
+- Completed Persian translations for color customization, font selection, and the 24-hour time format option.
+
 ## [1.6.6] - 2026-11-21
 ### Added
 - Added Jalali calendar support to file lists, recent files, file properties, date-based fast scrolling, and date format previews.
@@ -163,7 +169,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#251]: https://github.com/FossifyOrg/File-Manager/issues/251
 [#267]: https://github.com/FossifyOrg/File-Manager/issues/267
 
-[Unreleased]: https://github.com/afshin-ir/File-Manager/compare/1.6.6...HEAD
+[Unreleased]: https://github.com/afshin-ir/File-Manager/compare/1.6.7...HEAD
+[1.6.7]: https://github.com/afshin-ir/File-Manager/compare/1.6.6...1.6.7
 [1.6.6]: https://github.com/afshin-ir/File-Manager/compare/1.6.5...1.6.6
 [1.6.5]: https://github.com/FossifyOrg/File-Manager/compare/1.6.4...1.6.5
 [1.6.4]: https://github.com/FossifyOrg/File-Manager/compare/1.6.3...1.6.4
