@@ -138,7 +138,7 @@
     <string name="root">ریشه</string>
     <string name="properties">ویژگی‌ها</string>
     <string name="path">مسیر</string>
-    <string name="items_selected">مورد انتخاب شد</string>
+    <string name="items_selected">موارد انتخاب‌شده</string>
     <string name="files_count">تعداد فایل‌ها</string>
     <string name="resolution">وضوح تصویر</string>
     <string name="duration">مدت‌زمان</string>
@@ -181,8 +181,8 @@
     <string name="delete">حذف</string>
     <string name="remove">برداشتن</string>
     <string name="rename">تغییر نام</string>
-    <string name="share">هم‌رسانی</string>
-    <string name="share_via">هم‌رسانی با</string>
+    <string name="share">اشتراک‌گذاری</string>
+    <string name="share_via">اشتراک‌گذاری با</string>
     <string name="resize">تغییر اندازه</string>
     <string name="select_all">انتخاب همه</string>
     <string name="select_text">انتخاب متن</string>
@@ -250,7 +250,7 @@
     <string name="phone_storage">حافظهٔ دستگاه</string>
     <string name="phone_storage_hidden">حافظهٔ دستگاه (برای برنامه‌های دیگر قابل‌مشاهده نیست)</string>
     <string name="storage">حافظه</string>
-    <string name="filename_without_zip">نام فایل (بدون پسوند zip.)</string>
+    <string name="filename_without_zip">نام فایل (بدون پسوند .zip)</string>
     <string name="md5">MD5</string>
     <string name="sha1">SHA-1</string>
     <string name="sha256">SHA-256</string>
