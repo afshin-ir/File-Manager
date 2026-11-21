@@ -24,7 +24,7 @@ fun Long.formatLocalizedFileSize(context: Context): String {
     val language = context.resources.configuration.locales[0].language
     if (language != "fa") return formatted
 
-    val match = Regex("""^(.+?)\\s+(B|kB|KiB|MB|MiB|GB|GiB|TB|TiB|PB|PiB|EB|EiB)$""")
+    val match = Regex("""^(.+?)\s+(B|kB|KiB|MB|MiB|GB|GiB|TB|TiB|PB|PiB|EB|EiB)$""")
         .matchEntire(formatted) ?: return formatted
     val number = match.groupValues[1]
     val unit = persianFileSizeUnits[match.groupValues[2]] ?: return formatted
