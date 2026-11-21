@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.6.8] - 2026-11-21
+### Fixed
+- Localized storage overview sizes, including internal storage capacity and free space.
+- Corrected right-to-left rendering so Persian file size units follow the number visually.
+
 ## [1.6.7] - 2026-11-21
 ### Changed
 - Improved file list readability by showing modification dates on their own line at the same text size as file sizes.
@@ -169,7 +174,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#251]: https://github.com/FossifyOrg/File-Manager/issues/251
 [#267]: https://github.com/FossifyOrg/File-Manager/issues/267
 
-[Unreleased]: https://github.com/afshin-ir/File-Manager/compare/1.6.7...HEAD
+[Unreleased]: https://github.com/afshin-ir/File-Manager/compare/1.6.8...HEAD
+[1.6.8]: https://github.com/afshin-ir/File-Manager/compare/1.6.7...1.6.8
 [1.6.7]: https://github.com/afshin-ir/File-Manager/compare/1.6.6...1.6.7
 [1.6.6]: https://github.com/afshin-ir/File-Manager/compare/1.6.5...1.6.6
 [1.6.5]: https://github.com/FossifyOrg/File-Manager/compare/1.6.4...1.6.5
