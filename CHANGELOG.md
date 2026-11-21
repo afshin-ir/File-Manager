@@ -6,12 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.6.6] - 2026-11-21
 ### Added
-- Added an option to display file dates with the Jalali calendar, enabled by default for Persian app language.
-- Added Jalali date previews to the date and time format chooser.
+- Added Jalali calendar support to file lists, recent files, file properties, date-based fast scrolling, and date format previews.
+- Added a preference to choose whether dates use the Jalali calendar; it is enabled by default when the app language is Persian.
 
 ### Changed
-- File modification dates in file lists, file properties, and recent files now follow the selected calendar.
+- Reworked the Persian interface translation, including file operations, confirmation dialogs, and settings.
+- Assigned this fork its own Android application ID so it can be installed alongside Fossify File Manager.
 
 ## [1.6.5] - 2026-11-18
 ### Changed
@@ -161,7 +163,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#251]: https://github.com/FossifyOrg/File-Manager/issues/251
 [#267]: https://github.com/FossifyOrg/File-Manager/issues/267
 
-[Unreleased]: https://github.com/FossifyOrg/File-Manager/compare/1.6.5...HEAD
+[Unreleased]: https://github.com/afshin-ir/File-Manager/compare/1.6.6...HEAD
+[1.6.6]: https://github.com/afshin-ir/File-Manager/compare/1.6.5...1.6.6
 [1.6.5]: https://github.com/FossifyOrg/File-Manager/compare/1.6.4...1.6.5
 [1.6.4]: https://github.com/FossifyOrg/File-Manager/compare/1.6.3...1.6.4
 [1.6.3]: https://github.com/FossifyOrg/File-Manager/compare/1.6.2...1.6.3
