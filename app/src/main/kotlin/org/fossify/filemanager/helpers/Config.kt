@@ -22,6 +22,10 @@ class Config(context: Context) : BaseConfig(context) {
 
     fun shouldShowHidden() = showHidden || temporarilyShowHidden
 
+    var useJalaliCalendar: Boolean
+        get() = prefs.getBoolean(USE_JALALI_CALENDAR, context.resources.configuration.locales[0].language == "fa")
+        set(useJalaliCalendar) = prefs.edit().putBoolean(USE_JALALI_CALENDAR, useJalaliCalendar).apply()
+
     var pressBackTwice: Boolean
         get() = prefs.getBoolean(PRESS_BACK_TWICE, true)
         set(pressBackTwice) = prefs.edit().putBoolean(PRESS_BACK_TWICE, pressBackTwice).apply()

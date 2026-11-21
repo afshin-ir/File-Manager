@@ -37,7 +37,7 @@ import net.lingala.zip4j.model.enums.EncryptionMethod
 import org.fossify.commons.adapters.MyRecyclerViewAdapter
 import org.fossify.commons.dialogs.ConfirmationDialog
 import org.fossify.commons.dialogs.FilePickerDialog
-import org.fossify.commons.dialogs.PropertiesDialog
+import org.fossify.filemanager.dialogs.PropertiesDialog
 import org.fossify.commons.dialogs.RadioGroupDialog
 import org.fossify.commons.dialogs.RenameDialog
 import org.fossify.commons.dialogs.RenameItemDialog
@@ -53,6 +53,7 @@ import org.fossify.commons.extensions.deleteFile
 import org.fossify.commons.extensions.deleteFileBg
 import org.fossify.commons.extensions.deleteFolderBg
 import org.fossify.commons.extensions.formatDate
+import org.fossify.commons.helpers.SORT_BY_DATE_MODIFIED
 import org.fossify.commons.extensions.formatSize
 import org.fossify.commons.extensions.getAndroidSAFFileItems
 import org.fossify.commons.extensions.getAndroidSAFUri
@@ -99,6 +100,7 @@ import org.fossify.filemanager.databinding.ItemSectionBinding
 import org.fossify.filemanager.dialogs.CompressAsDialog
 import org.fossify.filemanager.extensions.config
 import org.fossify.filemanager.extensions.isPathOnRoot
+import org.fossify.filemanager.extensions.formatJalaliDate
 import org.fossify.filemanager.extensions.isZipFile
 import org.fossify.filemanager.extensions.setAs
 import org.fossify.filemanager.extensions.setLastModified
@@ -1084,7 +1086,11 @@ class ItemsAdapter(
                 } else {
                     itemDetails?.text = listItem.size.formatSize()
                     itemDate?.beVisible()
-                    itemDate?.text = listItem.modified.formatDate(activity, dateFormat, timeFormat)
+                    itemDate?.text = if (config.useJalaliCalendar) {
+                        listItem.modified.formatJalaliDate(activity, dateFormat, timeFormat)
+                    } else {
+                        listItem.modified.formatDate(activity, dateFormat, timeFormat)
+                    }
 
                     val drawable = fileDrawables.getOrElse(
                         key = fileName.substringAfterLast(".").lowercase(Locale.getDefault()),
@@ -1154,7 +1160,12 @@ class ItemsAdapter(
     }
 
     override fun onChange(position: Int): String {
-        return listItems.getOrNull(position)?.getBubbleText(activity, dateFormat, timeFormat) ?: ""
+        val item = listItems.getOrNull(position) ?: return ""
+        return if (config.useJalaliCalendar && FileDirItem.sorting and SORT_BY_DATE_MODIFIED != 0) {
+            item.modified.formatJalaliDate(activity, dateFormat, timeFormat)
+        } else {
+            item.getBubbleText(activity, dateFormat, timeFormat)
+        }
     }
 
     private sealed interface Binding {
