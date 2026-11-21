@@ -44,4 +44,5 @@
     <string name="total_storage">کل فضای ذخیره‌سازی: %s</string>
     <string name="enable_root_access">فعال‌سازی دسترسی روت</string>
     <string name="press_back_twice">برای خروج از برنامه، دو بار دکمهٔ بازگشت را بزنید</string>
+    <string name="use_jalali_calendar">نمایش تاریخ‌ها با تقویم جلالی</string>
 </resources>
