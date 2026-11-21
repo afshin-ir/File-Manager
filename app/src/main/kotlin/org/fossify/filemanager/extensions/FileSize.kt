@@ -30,6 +30,5 @@ fun Long.formatLocalizedFileSize(context: Context): String {
     val number = match.groupValues[1]
     val unit = persianFileSizeUnits[match.groupValues[2]] ?: return formatted
 
-    // Keep the numeric part left-to-right while the Persian unit follows RTL direction.
-    return "\u200E$number\u200E $unit"
+    return BidiFormatter.getInstance(locale).unicodeWrap(number + "\u00A0" + unit)
 }
