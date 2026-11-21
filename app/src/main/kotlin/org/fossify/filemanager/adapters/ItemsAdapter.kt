@@ -37,7 +37,7 @@ import net.lingala.zip4j.model.enums.EncryptionMethod
 import org.fossify.commons.adapters.MyRecyclerViewAdapter
 import org.fossify.commons.dialogs.ConfirmationDialog
 import org.fossify.commons.dialogs.FilePickerDialog
-import org.fossify.commons.dialogs.PropertiesDialog
+import org.fossify.filemanager.dialogs.PropertiesDialog
 import org.fossify.commons.dialogs.RadioGroupDialog
 import org.fossify.commons.dialogs.RenameDialog
 import org.fossify.commons.dialogs.RenameItemDialog
