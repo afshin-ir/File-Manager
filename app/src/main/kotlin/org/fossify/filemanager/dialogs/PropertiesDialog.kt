@@ -20,6 +20,7 @@ import org.fossify.commons.models.FileDirItem
 import org.fossify.commons.views.MyTextView
 import org.fossify.filemanager.extensions.config
 import org.fossify.filemanager.extensions.formatJalaliDate
+import org.fossify.filemanager.extensions.formatLocalizedFileSize
 import java.io.File
 import java.io.InputStream
 import java.util.*
@@ -69,7 +70,7 @@ class PropertiesDialog : BasePropertiesDialog {
 
         ensureBackgroundThread {
             val fileCount = fileDirItem.getProperFileCount(mActivity, mCountHiddenItems)
-            val size = fileDirItem.getProperSize(mActivity, mCountHiddenItems).formatSize()
+            val size = fileDirItem.getProperSize(mActivity, mCountHiddenItems).formatLocalizedFileSize(mActivity)
 
             val directChildrenCount = if (fileDirItem.isDirectory) {
                 fileDirItem.getDirectChildrenCount(mActivity, mCountHiddenItems).toString()
@@ -276,7 +277,7 @@ class PropertiesDialog : BasePropertiesDialog {
 
         ensureBackgroundThread {
             val fileCount = fileDirItems.sumByInt { it.getProperFileCount(activity, countHiddenItems) }
-            val size = fileDirItems.sumByLong { it.getProperSize(activity, countHiddenItems) }.formatSize()
+            val size = fileDirItems.sumByLong { it.getProperSize(activity, countHiddenItems) }.formatLocalizedFileSize(activity)
             activity.runOnUiThread {
                 (mDialogView.propertiesHolder.findViewById<LinearLayout>(R.id.properties_size).findViewById<MyTextView>(R.id.property_value)).text = size
                 (mDialogView.propertiesHolder.findViewById<LinearLayout>(R.id.properties_file_count).findViewById<MyTextView>(R.id.property_value)).text =
