@@ -22,7 +22,6 @@ import org.fossify.commons.extensions.beGone
 import org.fossify.commons.extensions.beVisible
 import org.fossify.commons.extensions.beVisibleIf
 import org.fossify.commons.extensions.fadeIn
-import org.fossify.commons.extensions.formatSize
 import org.fossify.commons.extensions.getIsPathDirectory
 import org.fossify.commons.extensions.getLongValue
 import org.fossify.commons.extensions.getProperBackgroundColor
@@ -46,6 +45,7 @@ import org.fossify.filemanager.adapters.ItemsAdapter
 import org.fossify.filemanager.databinding.ItemStorageVolumeBinding
 import org.fossify.filemanager.databinding.StorageFragmentBinding
 import org.fossify.filemanager.extensions.config
+import org.fossify.filemanager.extensions.formatLocalizedFileSize
 import org.fossify.filemanager.extensions.getAllVolumeNames
 import org.fossify.filemanager.helpers.ARCHIVES
 import org.fossify.filemanager.helpers.AUDIO
@@ -214,22 +214,22 @@ class StorageFragment(
 
             post {
                 volumes[volumeName]!!.apply {
-                    imagesSize.text = fileSizeImages.formatSize()
+                    imagesSize.text = fileSizeImages.formatLocalizedFileSize(context)
                     imagesProgressbar.progress = (fileSizeImages / SIZE_DIVIDER).toInt()
 
-                    videosSize.text = fileSizeVideos.formatSize()
+                    videosSize.text = fileSizeVideos.formatLocalizedFileSize(context)
                     videosProgressbar.progress = (fileSizeVideos / SIZE_DIVIDER).toInt()
 
-                    audioSize.text = fileSizeAudios.formatSize()
+                    audioSize.text = fileSizeAudios.formatLocalizedFileSize(context)
                     audioProgressbar.progress = (fileSizeAudios / SIZE_DIVIDER).toInt()
 
-                    documentsSize.text = fileSizeDocuments.formatSize()
+                    documentsSize.text = fileSizeDocuments.formatLocalizedFileSize(context)
                     documentsProgressbar.progress = (fileSizeDocuments / SIZE_DIVIDER).toInt()
 
-                    archivesSize.text = fileSizeArchives.formatSize()
+                    archivesSize.text = fileSizeArchives.formatLocalizedFileSize(context)
                     archivesProgressbar.progress = (fileSizeArchives / SIZE_DIVIDER).toInt()
 
-                    othersSize.text = fileSizeOthers.formatSize()
+                    othersSize.text = fileSizeOthers.formatLocalizedFileSize(context)
                     othersProgressbar.progress = (fileSizeOthers / SIZE_DIVIDER).toInt()
                 }
             }
@@ -340,9 +340,9 @@ class StorageFragment(
                         ((totalStorageSpace - freeStorageSpace) / SIZE_DIVIDER).toInt()
 
                     mainStorageUsageProgressbar.beVisible()
-                    freeSpaceValue.text = freeStorageSpace.formatSize()
+                    freeSpaceValue.text = freeStorageSpace.formatLocalizedFileSize(context)
                     totalSpace.text =
-                        String.format(context.getString(R.string.total_storage), totalStorageSpace.formatSize())
+                        String.format(context.getString(R.string.total_storage), totalStorageSpace.formatLocalizedFileSize(context))
                     freeSpaceLabel.beVisible()
                     getSizes(volumeName)
                 }
