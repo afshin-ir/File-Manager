@@ -54,7 +54,6 @@ import org.fossify.commons.extensions.deleteFileBg
 import org.fossify.commons.extensions.deleteFolderBg
 import org.fossify.commons.extensions.formatDate
 import org.fossify.commons.helpers.SORT_BY_DATE_MODIFIED
-import org.fossify.commons.extensions.formatSize
 import org.fossify.commons.extensions.getAndroidSAFFileItems
 import org.fossify.commons.extensions.getAndroidSAFUri
 import org.fossify.commons.extensions.getColoredDrawableWithColor
@@ -100,6 +99,7 @@ import org.fossify.filemanager.databinding.ItemSectionBinding
 import org.fossify.filemanager.dialogs.CompressAsDialog
 import org.fossify.filemanager.extensions.config
 import org.fossify.filemanager.extensions.isPathOnRoot
+import org.fossify.filemanager.extensions.formatLocalizedFileSize
 import org.fossify.filemanager.extensions.formatJalaliDate
 import org.fossify.filemanager.extensions.isZipFile
 import org.fossify.filemanager.extensions.setAs
@@ -1065,7 +1065,7 @@ class ItemsAdapter(
                 itemDetails?.setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize)
 
                 itemDate?.setTextColor(textColor)
-                itemDate?.setTextSize(TypedValue.COMPLEX_UNIT_PX, smallerFontSize)
+                itemDate?.setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize)
 
                 itemCheck?.beVisibleIf(isSelected)
                 if (isSelected) {
@@ -1084,7 +1084,7 @@ class ItemsAdapter(
                     itemDetails?.text = getChildrenCnt(listItem)
                     itemDate?.beGone()
                 } else {
-                    itemDetails?.text = listItem.size.formatSize()
+                    itemDetails?.text = listItem.size.formatLocalizedFileSize(activity)
                     itemDate?.beVisible()
                     itemDate?.text = if (config.useJalaliCalendar) {
                         listItem.modified.formatJalaliDate(activity, dateFormat, timeFormat)
