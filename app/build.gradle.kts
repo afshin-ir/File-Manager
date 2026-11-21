@@ -111,7 +111,7 @@ android {
         )
     }
 
-    namespace = project.property("APP_ID").toString()
+    namespace = "org.fossify.filemanager"
 
     lint {
         checkReleaseBuilds = false
