@@ -1,2 +1,2 @@
-# Auto-generated file. DO NOT EDIT. Release Persian count and empty-folder fixes.
-1.6.10 (22)
+# Auto-generated file. DO NOT EDIT. Fix launcher icon color component aliases.
+1.6.11 (23)
