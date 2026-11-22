@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- ترجمه‌های فارسی رابط برنامه و پنجره‌های مشترک -->
-    <string name="app_launcher_name">مدیریت فایل‌ها</string>
+    <string name="app_launcher_name">فایل‌ها</string>
     <string name="empty_folder">خالی</string>
-    <string name="app_name">مدیریت فایل‌ها</string>
+    <string name="app_name">فایل‌ها</string>
     <string name="press_back_again">برای خروج، دوباره دکمهٔ بازگشت را بزنید</string>
     <string name="go_to_home_folder">رفتن به پوشهٔ خانگی</string>
     <string name="set_as_home_folder">انتخاب به‌عنوان پوشهٔ خانگی</string>
