@@ -59,8 +59,8 @@ jobs:
         uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64
         with:
           token: ${{ github.token }}
-          tag_name: 1.6.9
-          name: مدیریت فایل‌ها 1.6.9
+          tag_name: 1.6.10
+          name: مدیریت فایل‌ها 1.6.10
           body: |
             این نسخه نمایش شمارنده‌ها و پوشه‌های خالی را در رابط فارسی اصلاح می‌کند.
 
