@@ -1,2 +1,2 @@
-# Auto-generated file. DO NOT EDIT. Retry release build after storage and RTL fixes.
-1.6.8 (20)
+# Auto-generated file. DO NOT EDIT. Release Persian count and empty-folder fixes.
+1.6.9 (21)
