@@ -1,2 +1,2 @@
 # Auto-generated file. DO NOT EDIT. Release Persian count and empty-folder fixes.
-1.6.9 (21)
+1.6.10 (22)
