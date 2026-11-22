@@ -9,6 +9,8 @@ import android.graphics.drawable.Drawable
 import android.graphics.drawable.Icon
 import android.graphics.drawable.LayerDrawable
 import android.net.Uri
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.Menu
@@ -100,6 +102,7 @@ import org.fossify.filemanager.dialogs.CompressAsDialog
 import org.fossify.filemanager.extensions.config
 import org.fossify.filemanager.extensions.isPathOnRoot
 import org.fossify.filemanager.extensions.formatLocalizedFileSize
+import org.fossify.filemanager.extensions.toLocalizedDigits
 import org.fossify.filemanager.extensions.formatJalaliDate
 import org.fossify.filemanager.extensions.isZipFile
 import org.fossify.filemanager.extensions.setAs
@@ -232,6 +235,27 @@ class ItemsAdapter(
     override fun onActionModeCreated() {
         swipeRefreshLayout?.isRefreshing = false
         swipeRefreshLayout?.isEnabled = false
+
+        // Commons builds the selection counter from ASCII integers. Localize the
+        // rendered title for Persian without changing the shared library.
+        (actMode?.customView as? TextView)?.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) = Unit
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) = Unit
+
+            override fun afterTextChanged(editable: Editable?) {
+                val text = editable?.toString() ?: return
+                val localizedText = text.map { character ->
+                    if (character in '0'..'9') {
+                        ('۰'.code + (character.code - '0'.code)).toChar()
+                    } else {
+                        character
+                    }
+                }.joinToString("")
+                if (text != localizedText) {
+                    editable.replace(0, editable.length, localizedText)
+                }
+            }
+        })
     }
 
     override fun onActionModeDestroyed() {
@@ -1117,7 +1141,11 @@ class ItemsAdapter(
 
     private fun getChildrenCnt(item: FileDirItem): String {
         val children = item.children
-        return activity.resources.getQuantityString(R.plurals.items, children, children)
+        return if (children == 0) {
+            activity.getString(R.string.empty_folder)
+        } else {
+            activity.resources.getQuantityString(R.plurals.items, children, children)
+        }
     }
 
     private fun getOTGPublicPath(itemToLoad: String): String {
