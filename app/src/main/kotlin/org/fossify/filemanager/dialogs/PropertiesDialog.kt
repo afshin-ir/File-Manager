@@ -21,6 +21,7 @@ import org.fossify.commons.views.MyTextView
 import org.fossify.filemanager.extensions.config
 import org.fossify.filemanager.extensions.formatJalaliDate
 import org.fossify.filemanager.extensions.formatLocalizedFileSize
+import org.fossify.filemanager.extensions.toLocalizedDigits
 import java.io.File
 import java.io.InputStream
 import java.util.*
@@ -73,7 +74,7 @@ class PropertiesDialog : BasePropertiesDialog {
             val size = fileDirItem.getProperSize(mActivity, mCountHiddenItems).formatLocalizedFileSize(mActivity)
 
             val directChildrenCount = if (fileDirItem.isDirectory) {
-                fileDirItem.getDirectChildrenCount(mActivity, mCountHiddenItems).toString()
+                fileDirItem.getDirectChildrenCount(mActivity, mCountHiddenItems)
             } else {
                 0
             }
@@ -83,10 +84,10 @@ class PropertiesDialog : BasePropertiesDialog {
 
                 if (fileDirItem.isDirectory) {
                     (mDialogView.propertiesHolder.findViewById<LinearLayout>(R.id.properties_file_count).findViewById<MyTextView>(R.id.property_value)).text =
-                        fileCount.toString()
+                        fileCount.toLocalizedDigits(mActivity)
                     (mDialogView.propertiesHolder.findViewById<LinearLayout>(R.id.properties_direct_children_count)
                         .findViewById<MyTextView>(R.id.property_value)).text =
-                        directChildrenCount.toString()
+                        directChildrenCount.toLocalizedDigits(mActivity)
                 }
             }
 
@@ -267,7 +268,7 @@ class PropertiesDialog : BasePropertiesDialog {
 
         val isSameParent = isSameParent(fileDirItems)
 
-        addProperty(R.string.items_selected, paths.size.toString())
+        addProperty(R.string.items_selected, paths.size.toLocalizedDigits(activity))
         if (isSameParent) {
             addProperty(R.string.path, fileDirItems[0].getParentPath())
         }
@@ -281,7 +282,7 @@ class PropertiesDialog : BasePropertiesDialog {
             activity.runOnUiThread {
                 (mDialogView.propertiesHolder.findViewById<LinearLayout>(R.id.properties_size).findViewById<MyTextView>(R.id.property_value)).text = size
                 (mDialogView.propertiesHolder.findViewById<LinearLayout>(R.id.properties_file_count).findViewById<MyTextView>(R.id.property_value)).text =
-                    fileCount.toString()
+                    fileCount.toLocalizedDigits(activity)
             }
         }
 
