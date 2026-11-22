@@ -243,6 +243,10 @@ class ItemsAdapter(
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) = Unit
 
             override fun afterTextChanged(editable: Editable?) {
+                if (activity.resources.configuration.locales[0].language != "fa") {
+                    return
+                }
+
                 val text = editable?.toString() ?: return
                 val localizedText = text.map { character ->
                     if (character in '0'..'9') {
