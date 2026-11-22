@@ -1,2 +1,2 @@
-# Auto-generated file. DO NOT EDIT. Fix launcher icon color component aliases.
-1.6.11 (23)
+# Auto-generated file. DO NOT EDIT. Rename Persian app label to Files.
+1.6.12 (24)
